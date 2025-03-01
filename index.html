@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Beca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Beca</h2>
+        <form id="scholarshipForm">
+            <h3>Datos Personales</h3>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Nombre" required>
+
+            <label>Apellidos:</label>
+            <input type="text" placeholder="Apellidos" required>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" placeholder="Correo Electrónico" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" placeholder="Teléfono" required>
+
+            <label>Carrera:</label>
+            <input type="text" placeholder="Carrera" required>
+
+            <label>Cuatrimestre:</label>
+            <select required>
+                <option value="" disabled selected>Selecciona tu cuatrimestre</option>
+                <option value="1">1er Cuatrimestre</option>
+                <option value="2">2do Cuatrimestre</option>
+                <option value="3">3er Cuatrimestre</option>
+                <option value="4">4to Cuatrimestre</option>
+                <option value="5">5to Cuatrimestre</option>
+                <option value="6">6to Cuatrimestre</option>
+                <option value="7">7mo Cuatrimestre</option>
+                <option value="8">8vo Cuatrimestre</option>
+                <option value="9">9no Cuatrimestre</option>
+                <option value="10">10mo Cuatrimestre</option>
+            </select>
+
+            <label>Redes Sociales (Opcional):</label>
+            <input type="text" placeholder="Redes Sociales">
+
+            <h3>Datos Oficiales</h3>
+            <label>CURP:</label>
+            <input type="text" placeholder="CURP" required>
+
+            <label>Lugar de Nacimiento:</label>
+            <input type="text" placeholder="Lugar de Nacimiento" required>
+
+            <label>Dirección Completa:</label>
+            <input type="text" placeholder="Dirección Completa" required>
+
+            <label>Identificación:</label>
+            <input type="text" placeholder="Identificación" required>
+
+            <h3>Datos Bancarios</h3>
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Contraseña" required>
+
+            <label>Clave Interbancaria:</label>
+            <input type="text" placeholder="Clave Interbancaria" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Modal de Seguridad -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>¡Atención! Protege tu información.</h3>
+            <p>No compartas datos personales en sitios desconocidos. Técnicas como el phishing, QRishing, SECURSIM y FISIM pueden usarse para robar tu identidad o acceder a cuentas. Verifica siempre la fuente antes de ingresar tus datos.</p>
+            <div class="note">NOTA: Tus datos no serán guardados; este ejercicio es solo con fines educativos para la materia de ciberseguridad.</div>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
